@@ -7,7 +7,6 @@ vendas = [
     ['Ana', 10300],
     ['Alon', 7870],
 ]
-for vendedor in vendas:
-    indice = vendas.index(vendedor)
-    if vendas[indice][1] < meta:
-        print('{} não bateu a meta mensal. Total de vendas: {}'.format(vendas[indice][0], vendas[indice][1]))
+for i, vendedor in enumerate(vendas):
+    if vendas[i][1] < meta:
+        print('{} não bateu a meta mensal. Total de vendas: {}'.format(vendas[i][0], vendas[i][1]))
