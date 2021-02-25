@@ -11,9 +11,11 @@ vendas = [
 
 vendedores = []
 melhor_vendedor = []
-for i, vendedor in enumerate(vendas):
-    if vendas[i][1] >= meta:
-        vendedores.append(vendas[i])
+##nesse caso, "vendedor" diz respeito a cada uma das listas com (nome, valor) em "vendas"
+#por isso vendedor[1] retorna o valor no índice [1] de cada vendedor em vendas
+for vendedor in vendas:
+    if vendedor[1] >= meta:
+        vendedores.append(vendedor)
     melhor_vendedor = (max(vendedores))
 porcentagem = (len(vendedores) * 100) / len(vendas)
 print('{}% dos vendedores atingiram a meta de vendas.'.format(porcentagem.__trunc__()))
