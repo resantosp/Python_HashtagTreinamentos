@@ -10,8 +10,11 @@ vendas = [
 ]
 
 vendedores = []
+melhor_vendedor = []
 for i, vendedor in enumerate(vendas):
     if vendas[i][1] >= meta:
         vendedores.append(vendas[i])
+    melhor_vendedor = (max(vendedores))
 porcentagem = (len(vendedores) * 100) / len(vendas)
 print('{}% dos vendedores atingiram a meta de vendas.'.format(porcentagem.__trunc__()))
+print('O(A) melhor vendedor(a) foi {} com um total de {} vendas.'.format(melhor_vendedor[0], melhor_vendedor[1]))
