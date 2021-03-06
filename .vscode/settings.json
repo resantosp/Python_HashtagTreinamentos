@@ -1,5 +1,6 @@
 {
     "editor.fontLigatures": null,
     "editor.fontSize": 17,
-    "editor.fontFamily": "BPmono"
+    "editor.fontFamily": "BPmono",
+    "terminal.integrated.fontFamily": "Courier"
 }
